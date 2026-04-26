@@ -1,0 +1,13 @@
+{
+  "name": "haggly-landing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Simple English landing page with minimal Node backend for signup.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

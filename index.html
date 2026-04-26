@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haggly</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <a href="#" class="logo-link" aria-label="Haggly home">
+        <img src="assets/haggly-logo.png" alt="Haggly" class="logo-image" />
+      </a>
+      <nav class="menu" aria-label="Main menu">
+        <a href="#" class="menu-link">About us</a>
+        <a href="#" class="menu-link">Help</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <div class="decor decor-passport" aria-hidden="true"></div>
+      <div class="decor decor-hand" aria-hidden="true"></div>
+      <div class="decor decor-ticket" aria-hidden="true"></div>
+      <div class="decor decor-compass" aria-hidden="true"></div>
+
+      <h1 class="hero-title">Travel like a local. Pay like a local.</h1>
+      <p class="hero-subtitle">
+        Give yourself some breathing room with Haggly™. 
+        Take a pic, get a price. Estimate taxi fares in seconds. 
+        No overpaying. No scams. No drama.
+      </p>
+
+      <form class="signup-form" action="/signup" method="post">
+        <label for="email" class="sr-only">Email address</label>
+        <input id="email" name="email" type="email" placeholder="Enter your email" required />
+        <button type="submit">Sign up</button>
+      </form>
+
+      <section class="phone-wrap" aria-label="Phone mockup">
+        <div class="features-side features-left">
+          <div class="feature-item">
+            <h3>Bargain Like a Local</h3>
+            <p>Snap a photo of any product in a local market, like a souk in Morocco, to get an instant estimate of its fair value.</p>
+          </div>
+          <div class="feature-item">
+            <h3>Confidence in Every Buy</h3>
+            <p>Know exactly what to pay before you start haggling. No more guessing, no more overpaying.</p>
+          </div>
+        </div>
+
+        <div class="phone-frame">
+          <div class="phone-notch"></div>
+          <div class="phone-screen splash-screen">
+            <img src="assets/haggly-outline--orange--white-icon.png" alt="Haggly Icon" class="splash-logo" />
+          </div>
+        </div>
+
+        <div class="features-side features-right">
+          <div class="feature-item">
+            <h3>Fair Taxi Fares</h3>
+            <p>Simply enter your location and destination to see exactly what a local would pay for the ride.</p>
+          </div>
+          <div class="feature-item">
+            <h3>Zero Tourist Scams</h3>
+            <p>Our features are built for one purpose: to ensure you never get scammed while exploring the world.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-minimal">
+      <p>&copy; 2026 Haggly™. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    // Apply active class directly to visual elements
+    document.querySelector('.hero-title')?.classList.add('active');
+    document.querySelector('.hero-subtitle')?.classList.add('active');
+    document.querySelector('.signup-form')?.classList.add('active');
+    document.querySelector('.phone-wrap')?.classList.add('active');
+  </script>
+</body>
+</html>
